@@ -997,182 +997,182 @@ function matchCheck (buttonPressed: boolean) {
     if (playing) {
         wasButtonPressed = buttonPressed
         pause(500)
-        for (let value of tiles.getTilesByType(assets.tile`myTile`)) {
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile`)) {
+        for (let value2 of tiles.getTilesByType(assets.tile`myTile`)) {
+            if (tiles.tileAtLocationEquals(value2.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile`)) {
+                if (tiles.tileAtLocationEquals(value2.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile`)) {
                     Matched = true
                     music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value2, assets.tile`transparency16`)
+                    tiles.setTileAt(value2.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value2.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
                     scoreShowQuick()
                     pause(500)
                     replaceTiles()
                 }
             }
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile`)) {
+            if (tiles.tileAtLocationEquals(value2.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile`)) {
+                if (tiles.tileAtLocationEquals(value2.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile`)) {
                     Matched = true
                     music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    scoreShowQuick()
-                    pause(500)
-                    replaceTiles()
-                }
-            }
-        }
-        for (let value of tiles.getTilesByType(assets.tile`myTile0`)) {
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile0`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile0`)) {
-                    Matched = true
-                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    scoreShowQuick()
-                    pause(500)
-                    replaceTiles()
-                }
-            }
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile0`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile0`)) {
-                    Matched = true
-                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value2, assets.tile`transparency16`)
+                    tiles.setTileAt(value2.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value2.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
                     scoreShowQuick()
                     pause(500)
                     replaceTiles()
                 }
             }
         }
-        for (let value of tiles.getTilesByType(assets.tile`myTile1`)) {
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile1`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile1`)) {
+        for (let value3 of tiles.getTilesByType(assets.tile`myTile0`)) {
+            if (tiles.tileAtLocationEquals(value3.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile0`)) {
+                if (tiles.tileAtLocationEquals(value3.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile0`)) {
                     Matched = true
                     music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value3, assets.tile`transparency16`)
+                    tiles.setTileAt(value3.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value3.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
                     scoreShowQuick()
                     pause(500)
                     replaceTiles()
                 }
             }
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile1`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile1`)) {
+            if (tiles.tileAtLocationEquals(value3.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile0`)) {
+                if (tiles.tileAtLocationEquals(value3.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile0`)) {
                     Matched = true
                     music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    scoreShowQuick()
-                    pause(500)
-                    replaceTiles()
-                }
-            }
-        }
-        for (let value of tiles.getTilesByType(assets.tile`myTile2`)) {
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile2`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile2`)) {
-                    Matched = true
-                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    scoreShowQuick()
-                    pause(500)
-                    replaceTiles()
-                }
-            }
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile2`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile2`)) {
-                    Matched = true
-                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value3, assets.tile`transparency16`)
+                    tiles.setTileAt(value3.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value3.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
                     scoreShowQuick()
                     pause(500)
                     replaceTiles()
                 }
             }
         }
-        for (let value of tiles.getTilesByType(assets.tile`myTile3`)) {
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile3`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile3`)) {
+        for (let value4 of tiles.getTilesByType(assets.tile`myTile1`)) {
+            if (tiles.tileAtLocationEquals(value4.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile1`)) {
+                if (tiles.tileAtLocationEquals(value4.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile1`)) {
                     Matched = true
                     music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value4, assets.tile`transparency16`)
+                    tiles.setTileAt(value4.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value4.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
                     scoreShowQuick()
                     pause(500)
                     replaceTiles()
                 }
             }
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile3`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile3`)) {
+            if (tiles.tileAtLocationEquals(value4.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile1`)) {
+                if (tiles.tileAtLocationEquals(value4.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile1`)) {
                     Matched = true
                     music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    scoreShowQuick()
-                    pause(500)
-                    replaceTiles()
-                }
-            }
-        }
-        for (let value of tiles.getTilesByType(assets.tile`myTile4`)) {
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile4`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile4`)) {
-                    Matched = true
-                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    scoreShowQuick()
-                    pause(500)
-                    replaceTiles()
-                }
-            }
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile4`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile4`)) {
-                    Matched = true
-                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value4, assets.tile`transparency16`)
+                    tiles.setTileAt(value4.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value4.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
                     scoreShowQuick()
                     pause(500)
                     replaceTiles()
                 }
             }
         }
-        for (let value of tiles.getTilesByType(assets.tile`myTile5`)) {
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile5`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile5`)) {
+        for (let value5 of tiles.getTilesByType(assets.tile`myTile2`)) {
+            if (tiles.tileAtLocationEquals(value5.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile2`)) {
+                if (tiles.tileAtLocationEquals(value5.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile2`)) {
                     Matched = true
                     music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value5, assets.tile`transparency16`)
+                    tiles.setTileAt(value5.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value5.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
                     scoreShowQuick()
                     pause(500)
                     replaceTiles()
                 }
             }
-            if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile5`)) {
-                if (tiles.tileAtLocationEquals(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile5`)) {
+            if (tiles.tileAtLocationEquals(value5.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile2`)) {
+                if (tiles.tileAtLocationEquals(value5.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile2`)) {
                     Matched = true
                     music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
-                    tiles.setTileAt(value, assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
-                    tiles.setTileAt(value.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value5, assets.tile`transparency16`)
+                    tiles.setTileAt(value5.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value5.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    scoreShowQuick()
+                    pause(500)
+                    replaceTiles()
+                }
+            }
+        }
+        for (let value6 of tiles.getTilesByType(assets.tile`myTile3`)) {
+            if (tiles.tileAtLocationEquals(value6.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile3`)) {
+                if (tiles.tileAtLocationEquals(value6.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile3`)) {
+                    Matched = true
+                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
+                    tiles.setTileAt(value6, assets.tile`transparency16`)
+                    tiles.setTileAt(value6.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value6.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    scoreShowQuick()
+                    pause(500)
+                    replaceTiles()
+                }
+            }
+            if (tiles.tileAtLocationEquals(value6.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile3`)) {
+                if (tiles.tileAtLocationEquals(value6.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile3`)) {
+                    Matched = true
+                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
+                    tiles.setTileAt(value6, assets.tile`transparency16`)
+                    tiles.setTileAt(value6.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value6.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    scoreShowQuick()
+                    pause(500)
+                    replaceTiles()
+                }
+            }
+        }
+        for (let value7 of tiles.getTilesByType(assets.tile`myTile4`)) {
+            if (tiles.tileAtLocationEquals(value7.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile4`)) {
+                if (tiles.tileAtLocationEquals(value7.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile4`)) {
+                    Matched = true
+                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
+                    tiles.setTileAt(value7, assets.tile`transparency16`)
+                    tiles.setTileAt(value7.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value7.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    scoreShowQuick()
+                    pause(500)
+                    replaceTiles()
+                }
+            }
+            if (tiles.tileAtLocationEquals(value7.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile4`)) {
+                if (tiles.tileAtLocationEquals(value7.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile4`)) {
+                    Matched = true
+                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
+                    tiles.setTileAt(value7, assets.tile`transparency16`)
+                    tiles.setTileAt(value7.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value7.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    scoreShowQuick()
+                    pause(500)
+                    replaceTiles()
+                }
+            }
+        }
+        for (let value8 of tiles.getTilesByType(assets.tile`myTile5`)) {
+            if (tiles.tileAtLocationEquals(value8.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile5`)) {
+                if (tiles.tileAtLocationEquals(value8.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`myTile5`)) {
+                    Matched = true
+                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
+                    tiles.setTileAt(value8, assets.tile`transparency16`)
+                    tiles.setTileAt(value8.getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    tiles.setTileAt(value8.getNeighboringLocation(CollisionDirection.Bottom).getNeighboringLocation(CollisionDirection.Bottom), assets.tile`transparency16`)
+                    scoreShowQuick()
+                    pause(500)
+                    replaceTiles()
+                }
+            }
+            if (tiles.tileAtLocationEquals(value8.getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile5`)) {
+                if (tiles.tileAtLocationEquals(value8.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`myTile5`)) {
+                    Matched = true
+                    music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.InBackground)
+                    tiles.setTileAt(value8, assets.tile`transparency16`)
+                    tiles.setTileAt(value8.getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
+                    tiles.setTileAt(value8.getNeighboringLocation(CollisionDirection.Right).getNeighboringLocation(CollisionDirection.Right), assets.tile`transparency16`)
                     scoreShowQuick()
                     pause(500)
                     replaceTiles()
@@ -1184,10 +1184,10 @@ function matchCheck (buttonPressed: boolean) {
 function setUpBoard () {
     sprites.destroyAllSpritesOfKind(SpriteKind.colorTile)
     tiles.setCurrentTilemap(tilemap`level1`)
-    for (let value of tiles.getTilesByType(assets.tile`transparency16`)) {
+    for (let value9 of tiles.getTilesByType(assets.tile`transparency16`)) {
         color2 = randint(0, 6)
         colorSprite = sprites.create(colorSpriteList[color2], SpriteKind.colorTile)
-        tiles.placeOnTile(colorSprite, value)
+        tiles.placeOnTile(colorSprite, value9)
         if (color2 == 0) {
             tiles.setTileAt(colorSprite.tilemapLocation(), assets.tile`myTile`)
         } else if (color2 == 1) {
